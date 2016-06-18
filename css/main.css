@@ -3,6 +3,9 @@
     font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
     box-sizing: border-box;
 }
+i{
+    margin: 5px;
+}
 body{
     margin: 0;
     padding: 0;
