@@ -1,0 +1,93 @@
+@import url('footer.css');
+*{
+    font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #31363d;
+    background-image: url('../assets/image/bck.jpg');
+    background-size: cover;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* Style du menu de haut de page */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    color: #46c734;
+    font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: .85em;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-bottom: 50px;
+}
+#menu{
+    display: flex;
+    list-style-type: none;
+}
+#menu li{
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+    height: 30px;
+    border-radius: 10px;
+    line-height: 30px;
+    background: white;
+    -webkit-transition: background .2s .1s,color .2s .1s;
+    -moz-transition: background .2s .1s,color .2s .1s;
+    transition: background .2s .1s,color .2s .1s;
+}
+#menu li:hover{
+    background: #46c734;
+    color: white;
+}
+.logo_norm{
+    width: 50px;
+}
+.drop{
+    padding-top: 10px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+}
+li:hover .drop{
+    height: fit-content;
+    color: #46c734;
+}
+.drop li{
+    margin: 5px;
+}
+/* style pour tablette */
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+    header{
+    }
+}
+/* style pour telephone portable */
+@media screen and (min-width: 100px) and (max-width: 737px) {
+    header{
+        flex-direction: column;
+    }
+    header ul,li,nav{
+        width: 100%;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu li{
+        text-align: center;
+        border-radius: unset;
+    }
+    .drop{
+        position: relative;
+        padding-top: 0;
+        /*height: fit-content;*/
+    }
+}
