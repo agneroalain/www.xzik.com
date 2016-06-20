@@ -29,7 +29,6 @@ header{
     font-size: .85em;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
     width: 100%;
-    margin-bottom: 50px;
 }
 #menu{
     display: flex;
@@ -59,6 +58,7 @@ header{
     overflow: hidden;
     position: absolute;
     background-color: white;
+    z-index: 2;
 }
 li:hover .drop{
     height: fit-content;
