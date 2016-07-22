@@ -87,10 +87,9 @@
 #nav-arrows > a.sl-next {
 	right: 50px;
 }
-
-#nav-arrows > a.sl-next:hover {
-	background-color: #009EE3;
-	border-color: #009EE3;
+#nav-arrows > a.sl-next:hover,#nav-arrows > a.sl-prev:hover {
+	background-color: #222;
+	border-color: white;
 	color: #fff;
 }
 

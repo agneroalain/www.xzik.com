@@ -1,0 +1,17 @@
+.musique{
+    background-color: white;
+    margin: 40px;
+}
+.musique_cover{
+    height: 200px;
+    width: 200px;
+    background-color: #222;
+}
+.bt_play{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+.bt_play:hover{
+    color: #46c734;
+}

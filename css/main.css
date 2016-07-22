@@ -1,4 +1,12 @@
+@import url('artiste.css');
+@import url('signin.css');
 @import url('footer.css');
+@import url('event.css');
+@import url('musique.css');
+@import url('rech.css');
+@import url('player.css');
+@import url('profil_artiste.css');
+@import url('video.css');
 *{
     font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
     box-sizing: border-box;
@@ -21,6 +29,7 @@ ul{
 /* Style du menu de haut de page */
 header{
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     background: white;
@@ -29,6 +38,11 @@ header{
     font-size: .85em;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
     width: 100%;
+    z-index: 2;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
 }
 #menu{
     display: flex;
@@ -40,13 +54,16 @@ header{
     height: 30px;
     border-radius: 10px;
     line-height: 30px;
-    background: white;
     -webkit-transition: background .2s .1s,color .2s .1s;
     -moz-transition: background .2s .1s,color .2s .1s;
     transition: background .2s .1s,color .2s .1s;
 }
 #menu li:hover{
     background: #46c734;
+    color: white;
+}
+.active{
+    background-color:  #46c734;
     color: white;
 }
 .logo_norm{
@@ -64,13 +81,15 @@ li:hover .drop{
     height: fit-content;
     color: #46c734;
 }
+.li_active{
+    background-color: #46c734;
+    color: white;
+}
 .drop li{
     margin: 5px;
 }
 /* style pour tablette */
 @media screen and (min-width: 737px) and (max-width: 1200px) {
-    header{
-    }
 }
 /* style pour telephone portable */
 @media screen and (min-width: 100px) and (max-width: 737px) {

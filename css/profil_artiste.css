@@ -1,0 +1,15 @@
+aside{
+    background-color: #222;
+    height: 100%;
+    width: 200px;
+    color: white;
+    position: absolute;
+}
+.menu_profil ul{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFF;
+}
