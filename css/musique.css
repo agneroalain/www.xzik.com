@@ -17,7 +17,9 @@
 .musique_cover{
     height: 130px;
     width: 130px;
+    background-image: url("../assets/image/cover_song/cover1.jpg");
     background-color: #222;
+    background-size: cover;
 }
 .bt{
     position: absolute;

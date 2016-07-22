@@ -15,12 +15,9 @@
                 <option>Manager</option>
                 <option>Fan</option>
             </select>
-            <input type="text" placeholder="Votre mot de passe ici !"/>
+            <input type="password" placeholder="Votre mot de passe ici !"/>
             <input type="submit" value="VALIDER"/>
-            <div class="row">
-                <div class="col"><a>Se connecter avec facebook !</a></div>
-                <div class="col"><a>Seconnecter avec google+ !</a></div>
-            </div>
+            
         </form>
     </div>
     <div id="signin" class='sign'>
@@ -29,8 +26,19 @@
             <input type="text" placeholder="Votre nom utilisateur ici !"/>
             <input type="text" placeholder="Votre mot de passe ici !"/>
             <input type="submit" value="VALIDER"/>
+            <h3 class="h3gray" align='center'>OU </h3>
             <div class="row">
-                <div class="col"><a>Pas encore inscrit ?</a></div>
+                <div class="col colone_rs">
+                    <div>
+                        <a><i class="fa fa-facebook-official fa-2x fb" aria-hidden="true"></i>Se connecter avec facebook !</a>
+                    </div>
+                    <div>
+                        <a><i class="fa fa-google-plus fa-2x fb" aria-hidden="true"></i>Seconnecter avec google+ !</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="col"><a>Pas encore inscrit ?</a></div>-->
                 <div class="col"><a>Mot de passe oublié ?</a></div>
             </div>
         </form>

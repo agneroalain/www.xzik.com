@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
 }
-.form_style_1 input[type='text'],input[type='submit'],input[type='date'],select{
+.form_style_1 input[type='text'], input[type='password'],input[type='submit'],input[type='date'],select{
     height: 50px;
     margin: 5px;
     padding: 10px;
@@ -43,4 +43,17 @@
     font-size: 12px;
     margin-top: 10px;
     color: #46c734;
+}
+.colone_rs{
+    display: flex;
+    flex-direction: column;
+}
+.colone_rs div{
+    height: 50px;
+    border: 1px solid #46c734;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
 }
