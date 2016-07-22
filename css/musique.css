@@ -1,17 +1,35 @@
 .musique{
     background-color: white;
     margin: 40px;
+    border-radius: 10px;
+    margin:20px 0 20px 0;
+    cursor: pointer;
+    opacity: 0.8;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.musique:hover{
+     transition: box-shadow 0.3s 0.2s ease-in-out, opacity 0.3s 0.2s ease-in-out;
+    box-shadow: 8px 8px 20px black;
+    opacity: 1;
 }
 .musique_cover{
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
     background-color: #222;
 }
-.bt_play{
+.bt{
     position: absolute;
     color: white;
     cursor: pointer;
 }
-.bt_play:hover{
+.bt:hover{
     color: #46c734;
+}
+.bt_download{
+    margin-left: 25px;
+}
+.bt_voir{
+    margin-left: 48px;
 }
