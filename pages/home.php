@@ -1,7 +1,4 @@
-<?php
-    require('include/header.php');
-?>
-      <!--
+ <!--
         Home Slider
         ==================================== -->
 		<div class="fake_element"></div>
@@ -95,6 +92,3 @@
         <!--
         End Home SliderEnd
         ==================================== -->
-<?php
-    require('include/footer.php');
-?>

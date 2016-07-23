@@ -1,7 +1,4 @@
-<?php
-    require('include/header.php');
-?>
-    <div id="event_zone">
+<div id="event_zone">
         <div class="fake_element"></div>
         <div id="rech_" >
         <input type="text" class="input_" name="_rech" placeholder="Rechercher un evenement"/>
@@ -131,6 +128,3 @@
         </div>
         <div class="fake_element"></div>
     </div>
-<?php
-    require('include/footer.php');
-?>
