@@ -1,6 +1,4 @@
-<?php
-    require('include/header.php');
-?>
+<?php $i = 0;?>
 <div class="fake_element"></div>
 <div id="artiste">
     <div id="rech_" >
@@ -23,14 +21,21 @@
         </div>
     </div>
     <div class="row">
-        <a href="profil_artiste.php">
+        <?php foreach($db->query('SELECT * FROM artiste', 'Xzik\Table\Artiste') as $post): ?>
+        <?php
+        $i++;
+        if($i%4 == 0){
+         echo '</div><vr/><div class="row">';
+        }
+        ?>
+        <a href="<?= $post->getUrl(); ?>">
         <div class="artiste">
             <div class="avatar_artiste">
                 
             </div>
             <div class="desc_artiste">
                 <div class="nom_artiste">
-                    SINGUILA
+                    <?=$post->nom_art;?>
                 </div>
                 <div class="nbr_chanson_artiste">
                     25
@@ -38,8 +43,6 @@
             </div>
         </div>
         </a>
+         <?php endforeach; ?>
     </div>
 </div>
-<?php
-    require('include/footer.php');
-?>

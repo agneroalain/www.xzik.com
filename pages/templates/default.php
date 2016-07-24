@@ -18,7 +18,7 @@
             <nav>
                 <ul id="menu">
                     <a  href="index.php"><li><i class="fa fa-home"></i>Accueil</li></a>
-                    <a href="musique.php"><li><i class="fa fa-music"></i>Musique</a>
+                    <a href="index.php?p=musique"><li><i class="fa fa-music"></i>Musique</a>
                         <ul class="drop">
                             <li>Single</li>
                             <li>Album</li>
@@ -34,7 +34,7 @@
                             <li>Concert</li>
                         </ul>
                     </li>
-                    <a href="artiste.php"><li><i class="fa fa-user"></i>Artiste</li></a>
+                    <a href="index.php?p=artistes"><li><i class="fa fa-user"></i>Artiste</li></a>
                     <a href="index.php?p=event"><li><i class="fa fa-calendar"></i>Evenement</li></a>
                     <a href="signin.php"><li class="active">Sign In</li></a>
                 </ul>
