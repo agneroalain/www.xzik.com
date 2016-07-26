@@ -8,7 +8,7 @@
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 320px;
 }
 .musique:hover{
      transition: box-shadow 0.3s 0.2s ease-in-out, opacity 0.3s 0.2s ease-in-out;
@@ -18,15 +18,19 @@
 .musique_cover{
     height: 130px;
     width: 230px;
-    background-image: url("../assets/image/cover_song/cover1.jpg");
     background-color: #222;
     background-size: cover;
 }
 .musique_info{
     width: 100%;
     display: flex;
+    padding: 10px;
     align-items: center;
     justify-content: space-around;
+}
+.musique_nom{
+    font-size: 18px;
+    font-style: italic;
 }
 .bt{
     position: absolute;
@@ -41,4 +45,8 @@
 }
 .bt_voir{
     margin-left: 48px;
+}
+.musique_genre{
+    background-color: orangered;
+    color: white;
 }

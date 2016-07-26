@@ -1,7 +1,7 @@
 <?php
 namespace Xzik\Table;
 use Xzik\App;
-class Artiste{
+class Artiste extends Table{
     public static function getArtiste(){
         return App::getDb()->query('SELECT * FROM artiste', __CLASS__);
     }

@@ -24,13 +24,13 @@
         <?php foreach(\Xzik\Table\Artiste::getArtiste() as $artiste): ?>
         <?php
             $i++;
-            if($i%4 == 0){
+            if($i%5 == 0){
             echo '</div><vr/><div class="row">';
             }
         ?>
         <a href="<?= $artiste->url; ?>">
         <div class="artiste">
-            <div class="avatar_artiste" style="background-image:url('../public/assets/image/cover_art/<?= $artiste->avatar ?>.jpg');background-size:cover;  ">
+            <div class="avatar_artiste" style="background-image:url('../public/assets/image/cover_art/<?= $artiste->avatar ?>.jpg');background-size:cover;">
                 
             </div>
             <div class="desc_artiste">
