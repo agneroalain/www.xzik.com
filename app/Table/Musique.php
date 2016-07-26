@@ -18,4 +18,7 @@ class Musique{
     public function getDesc(){
         return $this->desc_son;
     }
+    public function getId(){
+        return $this->id_son;
+    }
 }

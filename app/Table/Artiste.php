@@ -14,4 +14,7 @@ class Artiste{
     public function getUrl(){
         return 'index.php?p=pa&id=' . $this->id_art;
     }
+    public function getAvatar(){
+        return $this->avatar_art;
+    }
 }

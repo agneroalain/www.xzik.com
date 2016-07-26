@@ -13,7 +13,7 @@
     <body>
            <header>
             <div id="logo">
-                <img src="assets/image/logo.png" width="200px"/>
+                <img src="../public/assets/image/logo.png" width="200px"/>
             </div>
             <nav>
                 <ul id="menu">

@@ -30,7 +30,7 @@
         ?>
         <a href="<?= $artiste->url; ?>">
         <div class="artiste">
-            <div class="avatar_artiste">
+            <div class="avatar_artiste" style="background-image:url('../public/assets/image/cover_art/<?= $artiste->avatar ?>.jpg');background-size:cover;  ">
                 
             </div>
             <div class="desc_artiste">
