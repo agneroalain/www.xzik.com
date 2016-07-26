@@ -6,11 +6,7 @@ if(isset($_GET['p'])){
     $p = $_GET['p'];
 }else{
     $p = 'home';
-}
-
-//Initialisation des objets
-
-$db = new Xzik\Database('bd_xzik');         
+}      
 
 ob_start();
 

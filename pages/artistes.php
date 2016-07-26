@@ -21,21 +21,21 @@
         </div>
     </div>
     <div class="row">
-        <?php foreach($db->query('SELECT * FROM artiste', 'Xzik\Table\Artiste') as $post): ?>
+        <?php foreach(\Xzik\Table\Artiste::getArtiste() as $artiste): ?>
         <?php
-        $i++;
-        if($i%4 == 0){
-         echo '</div><vr/><div class="row">';
-        }
+            $i++;
+            if($i%4 == 0){
+            echo '</div><vr/><div class="row">';
+            }
         ?>
-        <a href="<?= $post->getUrl(); ?>">
+        <a href="<?= $artiste->url; ?>">
         <div class="artiste">
             <div class="avatar_artiste">
                 
             </div>
             <div class="desc_artiste">
                 <div class="nom_artiste">
-                    <?=$post->nom_art;?>
+                    <?=$artiste->nom_art;?>
                 </div>
                 <div class="nbr_chanson_artiste">
                     25

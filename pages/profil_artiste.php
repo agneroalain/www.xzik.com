@@ -1,8 +1,12 @@
+<?php
+$artiste = $db->prepare('SELECT * FROM artiste WHERE id_art = ?', [$_GET['id']], 'Xzik\Table\Artiste', true);
+?>
 <div id="profil_artiste">
     <aside>
         <nav>
         <div class="fake_element"></div>
             <ul>
+                <li class="art_li"><?= $artiste->nom_art; ?></li>
                 <li><i class="fa fa-play fa-1x "></i>ALBUM 1
                     <ul>
                         <li><i class="fa fa-play-circle fa-1x"> </i>song 1</li>
